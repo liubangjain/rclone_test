@@ -37,4 +37,4 @@ jobs:
          mkdir -p /home/runner/.config/rclone/
          cd /home/runner/.config/rclone/
          wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf
-         rclone copy a382:/xrw-552-搞学生妹-中文.mp4 update01:/cp
+         rclone copy a382:/test/*.* update01:/cp
