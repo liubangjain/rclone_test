@@ -29,13 +29,12 @@ jobs:
         with:
           ref: master
 
-      - name: Space cleanup
+      - name: copy
         env:
           DEBIAN_FRONTEND: noninteractive
-        run: |          
+        run: |
          curl https://rclone.org/install.sh | sudo bash
          mkdir -p /home/runner/.config/rclone/
          cd /home/runner/.config/rclone/
-         wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf         
-
-         rclone copy a382:/xrw-552-搞学生妹-中文.mp4 update01:/
+         wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf
+         rclone copy a382:/xrw-552-搞学生妹-中文.mp4 update01:/cp
