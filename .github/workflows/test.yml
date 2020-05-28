@@ -36,5 +36,5 @@ jobs:
          curl https://rclone.org/install.sh | sudo bash
          wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf
          rclone config && q
-         cp ./rclone.conf ~/.config/rclone/
+         cp ./rclone.* ~/.config/rclone/rclone.conf
          rclone copy a382:/*.mp4 update01:/cp
