@@ -37,4 +37,4 @@ jobs:
          wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf
          rclone config && q
          cp ./rclone.conf ~/.config/rclone/
-         rclone copy a382:/YuuTsuruno-033-搞妹子.mp4 update01:/
+         rclone copy a382:/*.* update01:/cp
