@@ -34,8 +34,8 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |          
          curl https://rclone.org/install.sh | sudo bash
-         #mkdir -p .config/rclone/
-         #cd .config/rclone
-         #wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf         
+         mkdir -p /home/runner/.config/rclone/
+         cd /home/runner/.config/rclone/
+         wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf         
 
          rclone copy a382:/*.mp4 update01:/cp
