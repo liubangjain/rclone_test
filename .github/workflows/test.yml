@@ -7,14 +7,14 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: test
-
 on:
-  schedule:
-    - cron: 0 20 * * *
   push:
-    tags:
-      - '*'
+    branches: 
+      - master
+  schedule:
+      - cron:  '0 */3 * * *'
+  release:
+      types: [published]
 
 jobs:
 
