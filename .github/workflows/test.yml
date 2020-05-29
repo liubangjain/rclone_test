@@ -37,4 +37,4 @@ jobs:
          mkdir -p /home/runner/.config/rclone/
          cd /home/runner/.config/rclone/
          wget https://raw.githubusercontent.com/liubangjain/rclone_test/master/rclone.conf
-         rclone copy a382:/test/ update01:/cp -P --transfers=10
+         rclone copy a382:/test/ update01:/cp -P --transfers=40
